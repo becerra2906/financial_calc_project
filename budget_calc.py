@@ -22,16 +22,21 @@ budget = float(input("What's your monthly income? "))
 print("""Excellent. The recommended proportion to be spend in different areas of life ensuring you maintain
 good financial health are 30% for rent, 10% for savings, 20% for groceries, 20% percent for utilities and 20% for 
 leisure.""")
-print("Thus the recommended distribution for your monthly budget is:")3
+print("Thus the recommended distribution for your monthly budget is:")
 print("For rent: ")
-print(budget * monthly_rent_percentage)
+print(budget 
+       * monthly_rent_percentage)
 print("For savings: ")
-print(budget*monthly_savings_percentage)
+print(budget
+       *monthly_savings_percentage)
 print("For groceries: ")
-print(budget*monthly_living_expenses_percentage)
+print(budget
+       *monthly_living_expenses_percentage)
 print("For utilities: ")
-print(budget*monthly_utilities_expenses_percentage)
+print(budget
+       *monthly_utilities_expenses_percentage)
 print("For leisure: ")
-print(budget*monthly_leisure_expenses_percentage)
+print(budget
+       *monthly_leisure_expenses_percentage)
 print("----")
 print("Thank you for using our program! See you next month.")
