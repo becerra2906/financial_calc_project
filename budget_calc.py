@@ -1,42 +1,24 @@
-# Simple budget calculator  V1.0
-# Written by : Alejandro Becerra
+# Simple budget calculator  V1.01
+# Written by : Alejandro Becerra 
+#This small python script will help you calculate a financially healthy
+#distribution for your income, providing information for your monthly budget
 
-# This small python script will help you calculate a financially healthy
-# distribution for your income, providing information for your monthly budget
+# V1.01 release notes: refactor the code to use format function for printing the output result and include the user input variable of name to provide a personalised experience
 
-# variables
+# pctg for calcs
+
 monthly_rent_percentage = 0.3
-monthly_savings_percentage = 0.1
-monthly_living_expenses_percentage = 0.2
+monthly_savings_percentage = 0.1 
+monthly_living_expenses_percentage = 0.2 
 monthly_utilities_expenses_percentage = 0.2
-monthly_leisure_expenses_percentage = 0.2
-# list for operations
-pct = ["monthly_rent_percentage", "monthly_savings_percentage", "monthly_living_expenses_percentage",
-       "monthly_utilities_expenses_percentage ", "monthly_leisure_expenses_percentage"]
+monthly_leisure_expenses_percentage = 0.2 
 
-print("Hi! Welcome to your budget calculator.")
-# user_name= str(input("What's your name? "))
-# print("Cool "+ name)
-print('We are going to help you manage your finances better.')
-budget = float(input("What's your monthly income? "))
-print("""Excellent. The recommended proportion to be spend in different areas of life ensuring you maintain
-good financial health are 30% for rent, 10% for savings, 20% for groceries, 20% percent for utilities and 20% for 
-leisure.""")
-print("Thus the recommended distribution for your monthly budget is:")
-print("For rent: ")
-print(budget 
-       * monthly_rent_percentage)
-print("For savings: ")
-print(budget
-       *monthly_savings_percentage)
-print("For groceries: ")
-print(budget
-       *monthly_living_expenses_percentage)
-print("For utilities: ")
-print(budget
-       *monthly_utilities_expenses_percentage)
-print("For leisure: ")
-print(budget
-       *monthly_leisure_expenses_percentage)
-print("----")
-print("Thank you for using our program! See you next month.")
+# welcome user and get name
+
+print("Hi! Welcome to your budget calculator. We are here to help you better allocate your monthly income, so you can save, invest and not overspend.")
+
+# saves name variable to be used in the output description of the budget distribution 
+
+name = input("What's your name?")
+
+#
