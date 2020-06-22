@@ -19,6 +19,11 @@ print("Hi! Welcome to your budget calculator. We are here to help you better all
 
 # saves name variable to be used in the output description of the budget distribution 
 
-name = input("What's your name?")
+name = input("What is your name?")
 
-#
+# saves the monthly income stated by the user as a variable. This income will
+# be used to calculate a budget
+
+income = input("What is your monthly income?")
+
+
