@@ -8,9 +8,13 @@
 # pctg for calcs
 
 monthly_rent_percentage = 0.3
+
 monthly_savings_percentage = 0.1 
+
 monthly_living_expenses_percentage = 0.2 
+
 monthly_utilities_expenses_percentage = 0.2
+
 monthly_leisure_expenses_percentage = 0.2 
 
 # welcome user and get name
@@ -24,6 +28,28 @@ name = input("What is your name? ")
 # saves the monthly income stated by the user as a variable. This income will
 # be used to calculate a budget
 
-income = input("What is your monthly income? ")
+income = float(input("What is your monthly income? "))
+
+# calculate budgetary distro
+
+rent = (income * monthly_rent_percentage)
+
+savings = (income * monthly_savings_percentage)
+
+expenses = (income * monthy_living_expenses_percentage)
+
+utilities = (income * monthly_utilities_expeneses_percentage)
+
+leisure = (income * monthly_leisure_expenses_percentage)
+
+# print distro 
+
+distro_message_="""{} based on your monthly budget you should save {}, 
+                    you should use {} for paying rent, 
+                    you should use {} for your monthly living expenses,
+                    you should use {} for paying your utilities 
+                    and you should use {} for leisure expenses."""
+
+print(distro_message).format(name, str(savings), str(rent), str(expenses), str(utilities), str(leisure))
 
 
