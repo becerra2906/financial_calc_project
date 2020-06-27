@@ -32,24 +32,20 @@ income = float(input("What is your monthly income? "))
 
 # calculate budgetary distro
 
-rent = (income * monthly_rent_percentage)
+rent = int(income * monthly_rent_percentage)
 
-savings = (income * monthly_savings_percentage)
+savings = int(income * monthly_savings_percentage)
 
-expenses = (income * monthy_living_expenses_percentage)
+expenses = int(income * monthly_living_expenses_percentage)
 
-utilities = (income * monthly_utilities_expeneses_percentage)
+utilities = int(income * monthly_utilities_expenses_percentage)
 
-leisure = (income * monthly_leisure_expenses_percentage)
+leisure = int(income * monthly_leisure_expenses_percentage)
 
 # print distro 
 
-distro_message_="""{} based on your monthly budget you should save {}, 
-                    you should use {} for paying rent, 
-                    you should use {} for your monthly living expenses,
-                    you should use {} for paying your utilities 
-                    and you should use {} for leisure expenses."""
+distro_message_="""{} based on your monthly budget you should save {}, you should use {} for paying rent, you should use {} for your monthly living expenses, you should use {} for paying your utilities and you should use {} for leisure expenses.""".format(name, str(savings), str(rent), str(expenses), str(utilities), str(leisure))
 
-print(distro_message).format(name, str(savings), str(rent), str(expenses), str(utilities), str(leisure))
-
-
+print(distro_message_)
+print("---------------")
+print("Thank you for using the budget calculator! I hope it was useful!")
